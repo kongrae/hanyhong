@@ -8,7 +8,7 @@
      * Description   :
      * Author        : 김홍래
      * Create Date   : 2024.01.01
-     * History       : 2024.01.01 Initial create by 김홍래
+     * History       : 2024.01.01 Initial create by 김홍래 TEST
      ***********************************************************/
 %>
 <script>
