@@ -27,6 +27,15 @@ dependencies {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'  //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' 			//스프링부트 3.0 이상
 	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+
+	// 오라클 관련
+	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+
+	// MyBatis 설정
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+
+	// 로그
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'
 }
 
 tasks.named('test') {

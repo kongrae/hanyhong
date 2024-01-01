@@ -1,5 +1,6 @@
 package com.honghany.login;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,9 @@ import java.util.Map;
 @Controller
 public class LoginController {
 
+    @Autowired
+    LoginService loginService;
+
     // 첫페이지
     @GetMapping("/")
     public String loginPage(Model model){
@@ -20,9 +24,10 @@ public class LoginController {
 
     @PostMapping(value = "/login.do")
     public String login(@RequestParam Map<String, String> paramMap, Model model){
-        System.out.println("paramMap.id : " + paramMap.get("id"));
-        System.out.println("paramMap.pass : " + paramMap.get("pass"));
         model.addAttribute("paramMap", paramMap);
+        int testCnt = loginService.selectTest();
+        System.out.println("testCnt : " + testCnt);
+
         return "main2";
     }
 }
