@@ -16,7 +16,7 @@
 
 <form id="form" method="post">
     <label for="id">아이디</label>
-    <input type="text" name="id" id="id" placeholder="아이디" required />
+    <input type="text" name="id" id="id" placeholder="아이디222" required />
     <label for="pass">비밀번호</label>
     <input type="password" name="pass" id="pass" placeholder="비밀번호" required />
     <input type="submit" value="로그인" />
