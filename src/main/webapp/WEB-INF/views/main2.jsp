@@ -4,7 +4,7 @@
     /***********************************************************
      * 메인화면
      ************************************************************
-     * JSP Name      : main.jsp
+     * JSP Name      : main2.jsp
      * Description   :
      * Author        : 김홍래
      * Create Date   : 2024.01.01
@@ -13,11 +13,10 @@
 %>
 <script>
 </script>
-
-<form id="form" method="post" action="/login.do">
-    <label for="id">아이디</label>
-    <input type="text" name="id" id="id" placeholder="아이디" required />
-    <label for="pass">비밀번호</label>
-    <input type="password" name="pass" id="pass" placeholder="비밀번호" required />
+<form id="form" method="post">
+    <label for="id">아이디2222</label>
+    <input type="text" name="id" id="id" value="<c:out value="${paramMap.id}"/>"/>
+    <label for="pass">222</label>
+    <input type="password" name="pass" id="pass" placeholder="비밀번호" />
     <input type="submit" value="로그인" />
 </form>
